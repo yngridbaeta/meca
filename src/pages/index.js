@@ -20,7 +20,7 @@ export default function Home() {
         <img src={logo} alt="Logo OptiFlow" className={estilos.logo} />
         <h3 className={estilos.subtitulo}>MONITORAMENTO DA LINHA DE PRODUÇÃO</h3>
       </header>
-
+ 
       {/* Seção Visão Geral */}
       <section className={estilos.secao}>
         <h2 className={estilos.titulo}>VISÃO GERAL</h2>
