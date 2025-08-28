@@ -8,12 +8,12 @@ import iconeReact from './react.png';
 import iconeRaspberry from './raspberry.png';
 import iconeDjango from './django.png';
 import iconeDBeaver from './esq.png';
-import sombraFundo from './sombraVerde.png';
+import logo65Anos from './logo65anos.png'
+import logoBosch from './logoBosch.png'
 
 export default function Home() {
   return (
     <div className={estilos.container}>
-
       {/* Cabeçalho */}
       <header className={estilos.cabecalho}>
         <img src={logo} alt="Logo OptiFlow" className={estilos.logo} />
@@ -42,7 +42,7 @@ export default function Home() {
       </section>
 
       {/* Seção Machine Learning */}
-      <section className={estilos.secao}>
+      <section className={estilos.secaoNot}>
         <div className={estilos.mlWrapper}>
           <h2 className={estilos.mlTitulo}>Machine Learn</h2>
           <h3 className={estilos.mlSubtitulo}>applied to industrial efficiency</h3>
@@ -54,7 +54,7 @@ export default function Home() {
       </section>
       
       {/* Tecnologias */}
-      <section className={estilos.secao}>
+      <section className={estilos.secaoTecnologias}>
         <h2 className={estilos.titulo}>Tecnologias Utilizadas</h2>
         <div className={estilos.cartoes}>
           <div className={estilos.cartao}>
@@ -70,7 +70,7 @@ export default function Home() {
             <p>Raspberry Pi</p>
           </div>
           <div className={estilos.cartao}>
-            <img src={iconeDjango} alt="Ícone Django" />
+            <img src={iconeDjango} alt="Ícone Django" id={estilos.django} />
             <p>Django</p>
           </div>
           <div className={estilos.cartao}>
@@ -78,6 +78,22 @@ export default function Home() {
             <p>DBeaver</p>
           </div>
         </div>
+
+        <hr/>
+
+        <secion className={estilos.footer}>
+          <div>
+            <img src={logo65Anos}></img>
+            <img src={logoBosch}></img>
+          </div>
+
+          <hr className={estilos.vertical}/>
+
+          <div className={estilos.equipe}>
+            <h6>Equipe</h6>
+            <p>Júlia Silva, Katolyne Ribeiro, Luiz Cagnan, Mateus França</p>
+          </div>
+        </secion>
       </section>
     </div>
   );

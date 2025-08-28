@@ -1,15 +1,18 @@
 .container {
   font-family: 'Poppins', sans-serif;
-  /* background: radial-gradient(circle at top left, #01443d 4%, #4a0c3a 10%,  #121212 20%, #4a0c3a 30%, #01443d 50%, #121212 70%  );   */
-  background: radial-gradient(circle at top left, #01443d -24%, #4a0c3a 8%, #121212 28%, #4a0c3a 58%, #121212 88%);
+  background: radial-gradient(circle at top left, #01443d 4%, #4a0c3a 10%,  #121212 35%, #4a0c3a 54%, #121212 60%, #01443d 70%, #121212 100% );  
+  /* background: radial-gradient(circle at top left, #01443d -24%, #4a0c3a 8%, #121212 28%, #4a0c3a 58%, #121212 88%); */
   color: #fff;
-  padding: 2rem;
+  /* padding: 1.5rem; */
   line-height: 1.6;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
 
+header{
+  padding: 1.5rem;
+}
 
 /* Conteúdo acima da sombra */
 .container > * {
@@ -20,12 +23,14 @@
 /* Cabeçalho */
 .cabecalho {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
+
 .logo {
   max-width: 200px;
   margin-bottom: 1rem;
 }
+
 .subtitulo {
   font-size: 0.9rem;
   letter-spacing: 2px;
@@ -34,9 +39,19 @@
 
 /* Seções */
 .secao {
-  margin: 4rem 0;
+  margin: 1px 0;
   text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
+
+.secaoNot{
+  display: flex;
+  align-items: center;
+}
+
 .titulo {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -44,7 +59,9 @@
   background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
+
 .texto {
   max-width: 800px;
   margin: 1rem auto;
@@ -62,48 +79,97 @@ strong {
   justify-content: center;
   margin: 2rem 0;
 }
+
 .notebook {
-  max-width: 500px;
+  margin-bottom: 40px;
+  max-width: 490px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 9px;
 }
 
 /* Seção Machine Learning */
 .mlWrapper {
+  margin-left: 30px;
   margin-bottom: 2rem;
 }
+
 .mlTitulo {
-  font-size: 1.8rem;
-  color: #872E68;
+ font-size: 1.4rem;
+  opacity: 1;
+  color: transparent;
+  background: linear-gradient(to right, #b833a0, #037457); /* gradiente ou cor sólida */
+  -webkit-background-clip: text;
+  background-clip: text;
 }
+
 .mlSubtitulo {
-  font-size: 1rem;
-  color: #ccc;
+  font-size: 1.4rem;
+  color: #ffffff;
 }
 
 /* Cards de tecnologias */
 .cartoes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* width: 200px; */
+    flex-wrap: wrap;
+
 }
+
 .cartao {
   background: white;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   transition: transform 0.3s;
+  width: 100px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
+
+.cartao img{
+  max-width: 68%;
+  margin-top: 30px;
+}
+.titulo{}
+
+.cartao p{
+  font-size: 10px;
+  color: #872E68;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
 .cartao:hover {
   transform: translateY(-5px);
 }
-.cartao img {
-  max-width: 50px;
-  margin-bottom: 1rem;
+
+#django{
+  width: 45%;
 }
-.cartao p {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #872E68;
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipe{
+  width: 50%;
+  font-size: 10px;
+}
+
+.vertical{
+  color: white;
+  width: 1px;           /* Fino como uma linha */
+  height: 50px;        /* Altura da linha */
+  border: none;         /* Remove a borda padrão do <hr> */
+  margin: 0 10px;    
 }
