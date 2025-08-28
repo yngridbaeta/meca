@@ -1,75 +1,109 @@
 .container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-}
-
-.logoWrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.logo {
-  width: 180px;
-  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.15));
-  transition: transform 0.3s ease;
-}
-
-.logo:hover {
-  transform: scale(1.05);
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 1.8rem;
-  margin-top: 40px;
-  margin-bottom: 15px;
-  border-left: 6px solid #3a8ee6;
-  padding-left: 12px;
-  color: #2c3e50;
-}
-
-p {
-  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  /* background: radial-gradient(circle at top left, #01443d 4%, #4a0c3a 10%,  #121212 20%, #4a0c3a 30%, #01443d 50%, #121212 70%  );   */
+  background: radial-gradient(circle at top left, #01443d -24%, #4a0c3a 8%, #121212 28%, #4a0c3a 58%, #121212 88%);
+  color: #fff;
+  padding: 2rem;
   line-height: 1.6;
-  margin-bottom: 20px;
-  color: #444;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 30px;
-  justify-content: center;
+
+/* Conteúdo acima da sombra */
+.container > * {
+  position: relative;
+  z-index: 1;
 }
 
-.tools > div {
-  width: 100px;
+/* Cabeçalho */
+.cabecalho {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.logo {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+.subtitulo {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #ccc;
+}
+
+/* Seções */
+.secao {
+  margin: 4rem 0;
   text-align: center;
 }
-
-.tools img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  margin-bottom: 10px;
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
-  transition: transform 0.2s ease;
+.titulo {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.texto {
+  max-width: 800px;
+  margin: 1rem auto;
+  color: #ddd;
 }
 
-.tools img:hover {
-  transform: scale(1.1);
+/* Destaque */
+strong {
+  color: #03D5B6;
 }
 
-.tools p {
-  font-weight: 600;
-  color: #555;
+/* Imagens */
+.imagemWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.notebook {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Seção Machine Learning */
+.mlWrapper {
+  margin-bottom: 2rem;
+}
+.mlTitulo {
+  font-size: 1.8rem;
+  color: #872E68;
+}
+.mlSubtitulo {
   font-size: 1rem;
+  color: #ccc;
+}
+
+/* Cards de tecnologias */
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.cartao {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+.cartao:hover {
+  transform: translateY(-5px);
+}
+.cartao img {
+  max-width: 50px;
+  margin-bottom: 1rem;
+}
+.cartao p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #872E68;
 }
