@@ -94,7 +94,7 @@ strong {
 }
 
 .mlTitulo {
- font-size: 1.4rem;
+  font-size: 1.4rem;
   opacity: 1;
   color: transparent;
   background: linear-gradient(to right, #b833a0, #037457); /* gradiente ou cor sólida */
@@ -136,7 +136,6 @@ strong {
   max-width: 68%;
   margin-top: 30px;
 }
-.titulo{}
 
 .cartao p{
   font-size: 10px;
@@ -149,10 +148,6 @@ strong {
 
 .cartao:hover {
   transform: translateY(-5px);
-}
-
-#django{
-  width: 45%;
 }
 
 .footer{
