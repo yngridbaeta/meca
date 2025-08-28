@@ -95,6 +95,9 @@ strong {
 .mlWrapper {
   margin-left: 2rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
+
+
 }
 
 .mlTitulo {
@@ -148,6 +151,7 @@ strong {
 
 .cartao img{
   max-width: 68%;
+  height: 60%;
   margin-top: 2rem;
 }
 
@@ -191,5 +195,9 @@ strong {
   align-items: center;
   justify-content: center;
   margin-left: 1rem;
+}
+
+.logos img{
+  width: 42%;
 }
 
