@@ -11,6 +11,7 @@ import iconeDBeaver from './esq.png';
 import logo65Anos from './logo65Anos.png'
 import logoBosch from './logoBosch.png'
 
+
 export default function Home() {
   return (
     <div className={estilos.container}>
