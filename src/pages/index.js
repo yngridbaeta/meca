@@ -8,7 +8,7 @@ import iconeReact from './react.png';
 import iconeRaspberry from './raspberry.png';
 import iconeDjango from './django.png';
 import iconeDBeaver from './esq.png';
-import logo65Anos from './logo65anos.png'
+import logo65Anos from './logonos.png'
 import logoBosch from './logoBosch.png'
 
 
