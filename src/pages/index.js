@@ -28,6 +28,7 @@ export default function Home() {
           Em ambientes industriais, falhas no reabastecimento de linhas de produção podem causar atrasos e prejuízos.
         </p>
         
+        
         <figure className={estilos.imagemWrapper}>
           <img src={notebookPrincipal} alt="Notebook mostrando OptiFlow" className={estilos.notebook} />
         </figure>
@@ -82,7 +83,7 @@ export default function Home() {
 
         <hr className={estilos.linha1}/>
 
-        <secion className={estilos.footer}>
+        <section className={estilos.footer}>
           <div className={estilos.logos}>
             <img src={logo65Anos}></img>
             <img src={logoBosch}></img>
@@ -94,7 +95,7 @@ export default function Home() {
             <h6>Equipe</h6>
             <p>Júlia Silva, Katolyne Ribeiro, Luiz Cagnan, Mateus França</p>
           </div>
-        </secion>
+        </section>
       </section>
     </div>
   );

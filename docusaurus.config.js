@@ -10,8 +10,10 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'OptiFlow',
   tagline: 'Dinosaurs are cool',
+  favicon: 'icon.png',   // <--- aqui
+
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {

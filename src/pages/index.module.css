@@ -50,7 +50,6 @@ header{
   text-align: justify;
   width: 25rem;
   justify-content: center;
-
 }
 
 .secaoNot{
@@ -96,8 +95,6 @@ strong {
   margin-left: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-
-
 }
 
 .mlTitulo {
@@ -117,13 +114,11 @@ strong {
 
 /* Cards de tecnologias */
 .cartoes {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    padding: 1.5rem;
-
-
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
 }
 
 .mlWrapper p{
@@ -189,7 +184,6 @@ strong {
   margin-right: 1.5rem;
 }
 
-
 .logos{
   display: flex;
   align-items: center;
@@ -201,3 +195,58 @@ strong {
   width: 42%;
 }
 
+
+@media (min-width: 1024px) {
+  .secao {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+
+  .mlWrapper, .imagemWrapper {
+    flex: 1;
+    max-width: 40%;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .equipe {
+    text-align: right;
+    font-size: 12px;
+  }
+
+  .container {
+    transform: scale(1.3);
+    transform-origin: top center;
+  }
+
+  .notebook {
+    width: 200%;
+  }
+
+  .imagemWrapper{
+    display: none;
+  }
+
+  .mlTitulo {
+    font-size: 3rem;
+    width: 25rem;
+    text-align: center;
+    opacity: 1;
+    color: transparent;
+    margin: 0;
+  }
+
+  .mlSubtitulo{
+    display: none;
+  }
+
+  .texto {
+    max-width: 59rem;
+    margin: 1rem auto;
+  }
+}
