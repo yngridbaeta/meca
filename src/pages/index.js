@@ -8,7 +8,7 @@ import iconeReact from './react.png';
 import iconeRaspberry from './raspberry.png';
 import iconeDjango from './django.png';
 import iconeDBeaver from './esq.png';
-import logo65Anos from './logo65anos.png'
+import logo65Anos from './logo65Anos.png'
 import logoBosch from './logoBosch.png'
 
 export default function Home() {
@@ -45,7 +45,7 @@ export default function Home() {
       <section className={estilos.secaoNot}>
         <div className={estilos.mlWrapper}>
           <h2 className={estilos.mlTitulo}>Machine Learn</h2>
-          <h3 className={estilos.mlSubtitulo}>applied to industrial efficiency</h3>
+          <p className={estilos.mlSubtitulo}>applied to industrial efficiency</p>
         </div>
 
         <figure className={estilos.imagemWrapper}>
@@ -79,10 +79,10 @@ export default function Home() {
           </div>
         </div>
 
-        <hr/>
+        <hr className={estilos.linha1}/>
 
         <secion className={estilos.footer}>
-          <div>
+          <div className={estilos.logos}>
             <img src={logo65Anos}></img>
             <img src={logoBosch}></img>
           </div>

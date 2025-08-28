@@ -1,6 +1,6 @@
 .container {
   font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at top left, #01443d 4%, #4a0c3a 10%,  #121212 35%, #4a0c3a 54%, #121212 60%, #01443d 70%, #121212 100% );  
+  background: radial-gradient(circle at top left, #013631 4%, #3f0b32 10%, #121212 35%,  #121212 60%, #013631 70%, #121212 100%);
   /* background: radial-gradient(circle at top left, #01443d -24%, #4a0c3a 8%, #121212 28%, #4a0c3a 58%, #121212 88%); */
   color: #fff;
   /* padding: 1.5rem; */
@@ -8,6 +8,10 @@
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 header{
@@ -23,17 +27,15 @@ header{
 /* Cabeçalho */
 .cabecalho {
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 16rem;
   margin-bottom: 1rem;
 }
 
 .subtitulo {
-  font-size: 0.9rem;
-  letter-spacing: 2px;
+  font-size: 0.75rem;
   color: #ccc;
 }
 
@@ -44,7 +46,11 @@ header{
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
+  text-align: justify;
+  width: 25rem;
+  justify-content: center;
+
 }
 
 .secaoNot{
@@ -63,7 +69,7 @@ header{
 }
 
 .texto {
-  max-width: 800px;
+  max-width: 20rem;
   margin: 1rem auto;
   color: #ddd;
 }
@@ -81,15 +87,13 @@ strong {
 }
 
 .notebook {
-  margin-bottom: 40px;
-  max-width: 490px;
+  margin-bottom: 0.2rem;
+  max-width: 15rem;
   width: 100%;
-  border-radius: 9px;
 }
 
-/* Seção Machine Learning */
 .mlWrapper {
-  margin-left: 30px;
+  margin-left: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -100,6 +104,7 @@ strong {
   background: linear-gradient(to right, #b833a0, #037457); /* gradiente ou cor sólida */
   -webkit-background-clip: text;
   background-clip: text;
+  margin: 0;
 }
 
 .mlSubtitulo {
@@ -111,10 +116,15 @@ strong {
 .cartoes {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    /* width: 200px; */
+    gap: 1.5rem;
     flex-wrap: wrap;
+    padding: 1.5rem;
 
+
+}
+
+.mlWrapper p{
+  font-size: 1.1rem;
 }
 
 .cartao {
@@ -123,18 +133,22 @@ strong {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   transition: transform 0.3s;
-  width: 100px;
-  height: 85px;
+  width: 5.5rem;
+  height: 5.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 0.4rem;
+}
+
+#django{
+  width: 1.4rem;
 }
 
 .cartao img{
   max-width: 68%;
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
 .cartao p{
@@ -146,14 +160,11 @@ strong {
 
 }
 
-.cartao:hover {
-  transform: translateY(-5px);
-}
-
 .footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem;
 }
 
 .equipe{
@@ -163,8 +174,22 @@ strong {
 
 .vertical{
   color: white;
-  width: 1px;           /* Fino como uma linha */
-  height: 50px;        /* Altura da linha */
-  border: none;         /* Remove a borda padrão do <hr> */
+  width: 1px;           
+  height: 50px;     
+  border: none;         
   margin: 0 10px;    
 }
+
+.linha1{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+
+.logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
