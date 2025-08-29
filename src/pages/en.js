@@ -1,17 +1,17 @@
 import React from 'react';
 import Translate, { translate } from '@docusaurus/Translate';
-import estilos from '../index.module.css';  // note que aqui é ../ porque está em pasta "en"
-import logo from '../logo.png';
-import notebookPrincipal from '../notebook1.png';
-import notebookSecundario from '../notebook2.png';
-import iconeMySql from '../mysql.png';
-import iconeReact from '../react.png';
-import iconeRaspberry from '../raspberry.png';
-import iconeDjango from '../django.png';
-import iconeDBeaver from '../esq.png';
-import logo65Anos from '../logonos.png';
-import logoBosch from '../logoBosch.png';
-import LanguageToggle from '../LanguageToggle';
+import estilos from './index.module.css';  // note que aqui é ./ porque está em pasta "en"
+import logo from './logo.png';
+import notebookPrincipal from './notebook1.png';
+import notebookSecundario from './notebook2.png';
+import iconeMySql from './mysql.png';
+import iconeReact from './react.png';
+import iconeRaspberry from './raspberry.png';
+import iconeDjango from './django.png';
+import iconeDBeaver from './esq.png';
+import logo65Anos from './logonos.png';
+import logoBosch from './logoBosch.png';
+import LanguageToggle from './LanguageToggle';
 
 export default function HomeEN(){
   return (

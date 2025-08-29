@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
-import HomePT from './index';
-import HomeEN from './en/index';
+import HomePT from '.';
+import HomeEN from './en';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
 function LanguageToggle() {
@@ -11,6 +11,7 @@ function LanguageToggle() {
   const isPortuguese = location.pathname === '/' || location.pathname === '/en';
 
   const toggleLang = () => {
+    console.log(isPortuguese)
     if (isPortuguese) {
       navigate('/');
     } else {
@@ -29,7 +30,6 @@ export default function App() {
   return (
     <BrowserOnly>
       <Router>
-        <LanguageToggle />
         <Routes>
           <Route path="/" element={<HomePT />} />
           <Route path="/en" element={<HomeEN />} />

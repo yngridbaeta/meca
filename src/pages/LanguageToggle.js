@@ -47,7 +47,6 @@ import { useLocation } from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function LanguageToggle() {
-  const { i18n } = useDocusaurusContext();
   const { pathname } = useLocation();
 
   const [isMounted, setIsMounted] = useState(false);
@@ -60,15 +59,19 @@ export default function LanguageToggle() {
   if (!isMounted) return null; // evita erros durante build SSR
 
   const isEnglish = pathname.startsWith('/en');
-  const targetLocale = isEnglish ? i18n.defaultLocale : 'en';
+  console.log(isEnglish);
+  const targetLocale = isEnglish ? 'pt' : 'en';
 
   const switchLanguage = () => {
-    const pathWithoutLocale = isEnglish
-      ? pathname.replace(/^\/en/, '')
-      : pathname;
+    console.log(targetLocale)
+    // const pathWithoutLocale = isEnglish
+    //   ? pathname.replace(/^\/en/, '')
+    //   : pathname;
 
-    const cleanedPath = `/${targetLocale === i18n.defaultLocale ? '' : targetLocale}${pathWithoutLocale}`
-      .replace(/\/{2,}/g, '/');
+    // const cleanedPath = `/${targetLocale === '' ? '' : targetLocale}${pathWithoutLocale}`
+    //   .replace(/\/{2,}/g, '/');
+    const cleanedPath = targetLocale == 'pt' ? '/' : '/en'
+    console.log(cleanedPath)
 
     window.location.href = cleanedPath; // ✅ Usa redirecionamento client-side
   };

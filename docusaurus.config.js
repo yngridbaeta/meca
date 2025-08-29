@@ -20,19 +20,6 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  i18n: {
-    defaultLocale: 'pt', // idioma padrão
-    locales: ['pt', 'en'], // lista de idiomas suportados
-    localeConfigs: {
-      pt: {
-        label: 'Português',
-      },
-      en: {
-        label: 'English',
-      },
-    },
-  },
-
   presets: [
     [
       'classic',
