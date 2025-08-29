@@ -6,23 +6,27 @@ export default function LanguageToggle() {
 
   useEffect(() => {
     setMounted(true);
-    setIsEnglish(window.location.pathname.startsWith('/en'));
+    if (typeof window !== 'undefined') {
+      setIsEnglish(window.location.pathname.startsWith('/en'));
+    }
   }, []);
 
   if (!mounted) {
-    return null; // não renderiza nada no servidor
+    return null;
   }
 
   const toggleLanguage = () => {
-    window.location.href = isEnglish ? '/' : '/en';
+    if (typeof window !== 'undefined') {
+      window.location.href = isEnglish ? '/' : '/en';
+    }
   };
+
   const buttonStyle = {
-    marginLeft: '75%',
     top: '1rem',
     right: '1rem',
-    background: 'rgba(219, 112, 147, 0.15)', // rosa translúcido com 15% de opacidade
-  color: 'rgba(169, 161, 164, 0.8)',       // texto com 80% de opacidade da cor rosa
-  border: '1.5px solid rgba(219, 112, 147, 0.4)', // borda com 40% de opacidade
+    background: 'rgba(219, 112, 147, 0.15)',
+    color: 'rgba(169, 161, 164, 0.8)',
+    border: '1.5px solid rgba(219, 112, 147, 0.4)',
     padding: '0.5rem 1.2rem',
     borderRadius: '20px',
     fontWeight: 'bold',
@@ -30,7 +34,7 @@ export default function LanguageToggle() {
     fontSize: '0.85rem',
     zIndex: 1000,
     transition: 'background 0.3s ease, color 0.3s ease, border-color 0.3s ease',
-    boxShadow: 'none',                    // removi a sombra para um visual mais leve
+    boxShadow: 'none',
   };
 
   return (
