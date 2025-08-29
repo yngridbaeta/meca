@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function LanguageToggle() {
-  const isEnglish = window.location.pathname.startsWith('/en');
+  const [isEnglish, setIsEnglish] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    setIsEnglish(window.location.pathname.startsWith('/en'));
+  }, []);
+
+  if (!mounted) {
+    return null; // não renderiza nada no servidor
+  }
 
   const toggleLanguage = () => {
     window.location.href = isEnglish ? '/' : '/en';
   };
-
   const buttonStyle = {
     marginLeft: '75%',
     top: '1rem',
