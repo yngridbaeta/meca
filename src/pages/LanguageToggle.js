@@ -42,28 +42,35 @@
 //     </button>
 //   );
 // }import React from 'react';
-import { useHistory, useLocation } from '@docusaurus/router';
+import React, { useEffect, useState } from 'react';
+import { useLocation } from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function LanguageToggle() {
   const { i18n } = useDocusaurusContext();
   const { pathname } = useLocation();
-  const history = useHistory();
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Só executa no client
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null; // evita erros durante build SSR
 
   const isEnglish = pathname.startsWith('/en');
   const targetLocale = isEnglish ? i18n.defaultLocale : 'en';
 
   const switchLanguage = () => {
-    // Remove o prefixo '/en' se estiver em inglês
     const pathWithoutLocale = isEnglish
       ? pathname.replace(/^\/en/, '')
       : pathname;
 
-    // Garante uma única barra no começo e remove barra duplicada
     const cleanedPath = `/${targetLocale === i18n.defaultLocale ? '' : targetLocale}${pathWithoutLocale}`
-      .replace(/\/{2,}/g, '/'); // remove barras duplicadas
+      .replace(/\/{2,}/g, '/');
 
-    history.push(cleanedPath);
+    window.location.href = cleanedPath; // ✅ Usa redirecionamento client-side
   };
 
   return (
