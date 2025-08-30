@@ -52,18 +52,19 @@ export default function HomeEN() {
             This project proposes an intelligent solution that integrates sensors with a Raspberry Pi and artificial intelligence to monitor the replenishment process in real time.
           </Translate>
         </p>
-        <p className={estilos.texto}>
-          {translate({
-            message:
-              'The technology ensures more {efficiency}, {reduces}, and contributes to {continuity}, aligning with Industry 4.0 principles.',
-            id: 'production.text',
-            values: {
-              efficiency: <strong>efficiency</strong>,
-              reduces: <strong>reduces human errors</strong>,
-              continuity: <strong>continuity and safety of production</strong>,
-            },
-          })}
-        </p>
+       <p className={estilos.texto}>
+  The technology ensures more{' '}
+  <strong style={{ color: '#03D5B6' }}>
+    efficiency
+  </strong>,{' '}
+  <strong style={{ color: '#03D5B6' }}>
+    reduces human errors
+  </strong>, and contributes to{' '}
+  <strong style={{ color: '#03D5B6' }}>
+    continuity and safety of production
+  </strong>, aligning with Industry 4.0 principles.
+</p>
+
       </section>
 
       {/* Machine Learning Section */}
@@ -130,7 +131,7 @@ export default function HomeEN() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Translate>Acessar Documentação</Translate>
+            <Translate>Access Documentation</Translate>
           </a>
         </section>
         <hr className={estilos.linha1} />

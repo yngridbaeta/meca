@@ -56,18 +56,21 @@ export default function HomePT() {
             tempo real, o processo de reabastecimento.
           </Translate>
         </p>
-        <p className={estilos.texto}>
-          {translate({
-            message:
-              'A tecnologia garante mais {eficiencia}, {reduz}, e contribui para a {continuidade}, alinhando-se aos princípios da indústria 4.0.',
-            id: 'producao.texto',
-            values: {
-              eficiencia: <strong>eficiência</strong>,
-              reduz: <strong>reduz falhas humanas</strong>,
-              continuidade: <strong>continuidade e segurança da produção</strong>,
-            },
-          })}
-        </p>
+<p className={estilos.texto}>
+  A tecnologia garante mais{' '}
+  <strong style={{ color: '#03D5B6' }}>
+    eficiência
+  </strong>,{' '}
+  <strong style={{ color: '#03D5B6' }}>
+    reduz falhas humanas
+  </strong>, e contribui para a{' '}
+  <strong style={{ color: '#03D5B6' }}>
+    continuidade e segurança da produção
+  </strong>, alinhando-se aos princípios da indústria 4.0.
+</p>
+
+
+
       </section>
 
       {/* Seção Machine Learning */}
