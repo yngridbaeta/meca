@@ -65,7 +65,7 @@ export default function HomeEN() {
   </strong>, aligning with Industry 4.0 principles.
 </p>
 
-      </section>
+      </section> 
 
       {/* Machine Learning Section */}
       <section className={estilos.secaoNot}>
