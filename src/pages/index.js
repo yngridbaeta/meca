@@ -12,11 +12,13 @@ import iconeDBeaver from './esq.png';
 import logo65Anos from './logonos.png';
 import logoBosch from './logoBosch.png';
 import LanguageToggle from './LanguageToggle';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 export default function HomePT() {
   return (
     <div className={estilos.container}>
-      <LanguageToggle/>
+      <LanguageToggle />
       {/* Cabeçalho */}
       <header className={estilos.cabecalho}>
         <img
@@ -124,6 +126,18 @@ export default function HomePT() {
             <p>DBeaver</p>
           </div>
         </div>
+
+        <section className={estilos.botao}>
+          <a
+            href={useBaseUrl('/OptiFlow.pdf')}
+            className={estilos.botaoDocumento}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Translate>Acessar Documentação</Translate>
+          </a>
+        </section>
+
 
         <hr className={estilos.linha1} />
 

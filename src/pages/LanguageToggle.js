@@ -80,7 +80,6 @@ export default function LanguageToggle() {
     <button
       onClick={switchLanguage}
       style={{
-        position: 'fixed',
         top: '1rem',
         right: '1rem',
         background: 'rgba(219, 112, 147, 0.3)',
@@ -92,6 +91,7 @@ export default function LanguageToggle() {
         cursor: 'pointer',
         fontSize: '0.85rem',
         zIndex: 1000,
+        marginLeft: '75%',
         transition: 'background 0.3s ease, color 0.3s ease, border-color 0.3s ease',
       }}
     >

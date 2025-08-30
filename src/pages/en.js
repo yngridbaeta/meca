@@ -1,6 +1,6 @@
 import React from 'react';
 import Translate, { translate } from '@docusaurus/Translate';
-import estilos from './index.module.css';  // note que aqui é ./ porque está em pasta "en"
+import estilos from './index.module.css';
 import logo from './logo.png';
 import notebookPrincipal from './notebook1.png';
 import notebookSecundario from './notebook2.png';
@@ -12,11 +12,12 @@ import iconeDBeaver from './esq.png';
 import logo65Anos from './logonos.png';
 import logoBosch from './logoBosch.png';
 import LanguageToggle from './LanguageToggle';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-export default function HomeEN(){
+export default function HomeEN() {
   return (
     <div className={estilos.container}>
-      <LanguageToggle/>
+      <LanguageToggle />
       {/* Header */}
       <header className={estilos.cabecalho}>
         <img
@@ -122,6 +123,16 @@ export default function HomeEN(){
           </div>
         </div>
 
+        <section className={estilos.botao}>
+          <a
+            href={useBaseUrl('/OptiFlow.pdf')}
+            className={estilos.botaoDocumento}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Translate>Acessar Documentação</Translate>
+          </a>
+        </section>
         <hr className={estilos.linha1} />
 
         <section className={estilos.footer}>

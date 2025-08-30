@@ -32,6 +32,7 @@ header{
 .logo {
   max-width: 16rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .subtitulo {
@@ -193,6 +194,28 @@ strong {
 
 .logos img{
   width: 42%;
+}
+
+.botaoDocumento {
+  display: inline-block;
+  margin: 2rem auto;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #037457, #651f58);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  opacity: 0.85;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.botao{
+  display: flex;
 }
 
 
